@@ -1,0 +1,1377 @@
+{
+	"info": {
+		"_postman_id": "e2925da8-9b09-4011-8074-9a0503e49e70",
+		"name": "Gamemano Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15455736"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Arnab\",\n    \"email\":\"arnabsahoo10@gmail.com\",\n    \"password\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/register",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Arnab\",\n    \"email\":\"arnabsahoo10@gmail.com\",\n    \"password\":\"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/register",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "RateLimit-Policy",
+									"value": "5;w=60"
+								},
+								{
+									"key": "RateLimit-Limit",
+									"value": "5"
+								},
+								{
+									"key": "RateLimit-Remaining",
+									"value": "4"
+								},
+								{
+									"key": "RateLimit-Reset",
+									"value": "60"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "449"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c1-NXB1r+unx7mdUwFIHzl5hG5GRbI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 06 Jul 2024 20:26:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODlhODg3ZjRlZGNiNDgxNWIyZjU2OCIsImlhdCI6MTcyMDI5NzYwNywiZXhwIjoxNzIxMTYxNjA3fQ.73Btho-Bhqn75n1ojsqobZD1GIkIGB0XJ3ngO1JKBfY\",\n    \"user\": {\n        \"name\": \"Arnab\",\n        \"email\": \"arnabsahoo10@gmail.com\",\n        \"password\": \"$2a$10$bjPYPx5Kgv6RazTbDOH7XuYpNtCoc5qxYDJ4Bb6nahJLQz86cciFa\",\n        \"role\": [\n            \"user\"\n        ],\n        \"_id\": \"6689a887f4edcb4815b2f568\",\n        \"createdAt\": \"2024-07-06T20:26:47.752Z\",\n        \"updatedAt\": \"2024-07-06T20:26:47.752Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"arnabsahoo10@gmail.com\",\n    \"password\":\"12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/login",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login Response Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"arnabsahoo10@gmail.com\",\n    \"password\":\"admin123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/login",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "RateLimit-Policy",
+									"value": "5;w=60"
+								},
+								{
+									"key": "RateLimit-Limit",
+									"value": "5"
+								},
+								{
+									"key": "RateLimit-Remaining",
+									"value": "4"
+								},
+								{
+									"key": "RateLimit-Reset",
+									"value": "60"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "450"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c2-TTNGYJECSZ8faL4Qs7/UudxX9rI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:22:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODliM2JlMmM0ZWYyZTczMmNmODI2NCIsImlhdCI6MTcyMDMyNjE2MSwiZXhwIjoxNzIxMTkwMTYxfQ.Il3kYemm3Ty52MG4Tkn1QQ1LZxMKgC5TSDdArjfPYg4\",\n    \"user\": {\n        \"_id\": \"6689b3be2c4ef2e732cf8264\",\n        \"name\": \"admin\",\n        \"email\": \"arnabsahoo10@gmail.com\",\n        \"password\": \"$2a$10$48sPxe7zrUwKO8xI9tClHODpRBWA2eqz89sn0ROmirzFnyw0Dsh0y\",\n        \"role\": [\n            \"admin\"\n        ],\n        \"__v\": 0,\n        \"createdAt\": \"2024-07-06T21:14:38.411Z\",\n        \"updatedAt\": \"2024-07-06T21:14:38.411Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"arnabsahoo10@gmail.com\",\n    \"password\":\"12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/profile",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Profile Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"arnabsahoo10@gmail.com\",\n    \"password\":\"12345\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/profile",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "185"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b9-4h20pAArI8uH+OdiFiKoMCcspPc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:23:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6689b3be2c4ef2e732cf8264\",\n    \"name\": \"admin\",\n    \"email\": \"arnabsahoo10@gmail.com\",\n    \"role\": [\n        \"admin\"\n    ],\n    \"__v\": 0,\n    \"createdAt\": \"2024-07-06T21:14:38.411Z\",\n    \"updatedAt\": \"2024-07-06T21:14:38.411Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Role",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"role\":\"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/profile/:id/role",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"profile",
+								":id",
+								"role"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "668a1fac762f0ec9d2e1df90"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update User Role Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"role\":\"admin\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/profile/:id/role",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"profile",
+										":id",
+										"role"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "668a1fac762f0ec9d2e1df90"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "44"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c-wCcLzBNInYz/bsld+rkYrpd7h/8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:57:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User role updated successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/products?page=1&limit=10",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Products Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/products?page=1&limit=10",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"products"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "895"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37f-TeQcDZfyLDTlMFEVJ0wwqsPTqjU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:23:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"products\": [\n        {\n            \"_id\": \"6689b3be2c4ef2e732cf825f\",\n            \"name\": \"Product 2\",\n            \"description\": \"Product 2 description\",\n            \"price\": 2000,\n            \"category\": \"sports and entertainment\",\n            \"__v\": 0,\n            \"createdAt\": \"2024-07-06T21:14:38.400Z\",\n            \"updatedAt\": \"2024-07-06T21:14:38.400Z\"\n        },\n        {\n            \"_id\": \"6689b3be2c4ef2e732cf8260\",\n            \"name\": \"Product 3\",\n            \"description\": \"Product 3 description\",\n            \"price\": 3000,\n            \"category\": \"entertainment\",\n            \"__v\": 0,\n            \"createdAt\": \"2024-07-06T21:14:38.400Z\",\n            \"updatedAt\": \"2024-07-06T21:14:38.400Z\"\n        },\n        {\n            \"_id\": \"6689b3be2c4ef2e732cf8261\",\n            \"name\": \"Product 4\",\n            \"description\": \"Product 4 description\",\n            \"price\": 4000,\n            \"category\": \"wellness\",\n            \"__v\": 0,\n            \"createdAt\": \"2024-07-06T21:14:38.400Z\",\n            \"updatedAt\": \"2024-07-06T21:14:38.400Z\"\n        },\n        {\n            \"_id\": \"6689b3be2c4ef2e732cf825e\",\n            \"name\": \"Product 1\",\n            \"description\": \"Product 1 description\",\n            \"price\": 1000,\n            \"category\": \"sports\",\n            \"__v\": 0,\n            \"createdAt\": \"2024-07-06T21:14:38.399Z\",\n            \"updatedAt\": \"2024-07-06T21:14:38.399Z\"\n        }\n    ],\n    \"count\": 4\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Kingfisher Stong\",\n    \"description\": \"strong beer with best seller\",\n    \"price\": 200,\n    \"category\": \"Beer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/products",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Product Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Kingfisher Stong\",\n    \"description\": \"strong beer with best seller\",\n    \"price\": 200,\n    \"category\": \"Beer\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/products",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "RateLimit-Policy",
+									"value": "10;w=60"
+								},
+								{
+									"key": "RateLimit-Limit",
+									"value": "10"
+								},
+								{
+									"key": "RateLimit-Remaining",
+									"value": "9"
+								},
+								{
+									"key": "RateLimit-Reset",
+									"value": "60"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "221"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"dd-f+WaTzQsAHACL+MrhHXu+23bUIE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:24:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Kingfisher Stong\",\n    \"description\": \"strong beer with best seller\",\n    \"price\": 200,\n    \"category\": \"Beer\",\n    \"_id\": \"668a18675f868d509db07858\",\n    \"createdAt\": \"2024-07-07T04:24:07.156Z\",\n    \"updatedAt\": \"2024-07-07T04:24:07.156Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\":\"strong beer with best seller\",\n    \"name\":\"Kingfisher Strong\"\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/products/:id",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "668a18675f868d509db07858"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Product Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\":\"strong beer with best seller\",\n    \"name\":\"Kingfisher Strong\"\n    \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/products/:id",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "668a18675f868d509db07858"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "RateLimit-Policy",
+									"value": "10;w=60"
+								},
+								{
+									"key": "RateLimit-Limit",
+									"value": "10"
+								},
+								{
+									"key": "RateLimit-Remaining",
+									"value": "9"
+								},
+								{
+									"key": "RateLimit-Reset",
+									"value": "60"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "222"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"de-zl8hVqxnkpnYWYWoQddXMUfLV9I\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:25:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"668a18675f868d509db07858\",\n    \"name\": \"Kingfisher Strong\",\n    \"description\": \"strong beer with best seller\",\n    \"price\": 200,\n    \"category\": \"Beer\",\n    \"createdAt\": \"2024-07-07T04:24:07.156Z\",\n    \"updatedAt\": \"2024-07-07T04:25:29.815Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Productby id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/products/:id",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "668a18675f868d509db07858"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Product By Id Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/products/:id",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "668a18675f868d509db07858"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "222"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"de-zl8hVqxnkpnYWYWoQddXMUfLV9I\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:31:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"668a18675f868d509db07858\",\n    \"name\": \"Kingfisher Strong\",\n    \"description\": \"strong beer with best seller\",\n    \"price\": 200,\n    \"category\": \"Beer\",\n    \"createdAt\": \"2024-07-07T04:24:07.156Z\",\n    \"updatedAt\": \"2024-07-07T04:25:29.815Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Place an Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"products\":[\"6689b3be2c4ef2e732cf8261\",\"6689b3be2c4ef2e732cf825e\",\"668a18675f868d509db07858\"],\n    \"address\":\"AI 73 ,street no 25,newtown,700156\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/orders",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Place Order Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"products\":[\"6689b3be2c4ef2e732cf8261\",\"6689b3be2c4ef2e732cf825e\",\"668a18675f868d509db07858\"],\n    \"address\":\"AI 73 ,street no 25,newtown,700156\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/orders",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-Ksy0pXcKy6Y7ZwUi6VioR2ymG2c\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:32:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Order created successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Order Status",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\":\"cancelled\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/orders/:id",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "668a1a5eb15d35ca89851d0d"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Order Status Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\":\"cancelled\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/orders/:id",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "668a1a5eb15d35ca89851d0d"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f-Yyi1LIGXmy1N2ZolMzWCwXqK1kY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:33:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Order status updated successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "My Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/orders?page=1&limit=10",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "My Orders Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/orders?page=1&limit=10",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "862"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35e-Zj48EsshRck4Ol7SKBUG3I47MfQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:33:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"orders\": [\n        {\n            \"_id\": \"668a1a5eb15d35ca89851d0d\",\n            \"products\": [\n                {\n                    \"_id\": \"6689b3be2c4ef2e732cf8261\",\n                    \"name\": \"Product 4\",\n                    \"price\": 4000\n                },\n                {\n                    \"_id\": \"6689b3be2c4ef2e732cf825e\",\n                    \"name\": \"Product 1\",\n                    \"price\": 1000\n                },\n                {\n                    \"_id\": \"668a18675f868d509db07858\",\n                    \"name\": \"Kingfisher Strong\",\n                    \"price\": 200\n                }\n            ],\n            \"address\": \"AI 73 ,street no 25,newtown,700156\",\n            \"status\": \"cancelled\",\n            \"total\": 5200,\n            \"user\": \"6689b3be2c4ef2e732cf8264\",\n            \"createdAt\": \"2024-07-07T04:32:30.302Z\",\n            \"updatedAt\": \"2024-07-07T04:33:33.252Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6689b3fa78ba6571cbac60a6\",\n            \"products\": [\n                {\n                    \"_id\": \"6689b3be2c4ef2e732cf8261\",\n                    \"name\": \"Product 4\",\n                    \"price\": 4000\n                },\n                {\n                    \"_id\": \"6689b3be2c4ef2e732cf825e\",\n                    \"name\": \"Product 1\",\n                    \"price\": 1000\n                }\n            ],\n            \"address\": \"AI 73 ,street no 25,newtown,700156\",\n            \"status\": \"cancelled\",\n            \"total\": 5000,\n            \"user\": \"6689b3be2c4ef2e732cf8264\",\n            \"createdAt\": \"2024-07-06T21:15:38.620Z\",\n            \"updatedAt\": \"2024-07-06T21:16:06.816Z\",\n            \"__v\": 0\n        }\n    ],\n    \"count\": 2\n}"
+						}
+					]
+				},
+				{
+					"name": "All Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/orders/all?page=1&limit=10",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"all"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "All Orders Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/orders/all?page=1&limit=10",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"all"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2273"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8e1-sTp94EtxocXWqtwPZEBoBWk5PhQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:58:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"orders\": [\n        {\n            \"_id\": \"66899fd730eaff02150d26e4\",\n            \"products\": [],\n            \"address\": \"test address\",\n            \"status\": \"pending\",\n            \"total\": 200,\n            \"user\": \"66899fcb645736a39ad79693\",\n            \"createdAt\": \"2024-07-06T19:49:43.307Z\",\n            \"updatedAt\": \"2024-07-06T19:49:43.307Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66899fd730eaff02150d26e2\",\n            \"products\": [],\n            \"address\": \"test address\",\n            \"status\": \"pending\",\n            \"total\": 200,\n            \"user\": \"66899fc6ad5083128fa651f7\",\n            \"createdAt\": \"2024-07-06T19:49:43.305Z\",\n            \"updatedAt\": \"2024-07-06T19:49:43.305Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66899fd730eaff02150d26e0\",\n            \"products\": [],\n            \"address\": \"test address\",\n            \"status\": \"pending\",\n            \"total\": 200,\n            \"user\": \"66899fc11360786ee7796493\",\n            \"createdAt\": \"2024-07-06T19:49:43.298Z\",\n            \"updatedAt\": \"2024-07-06T19:49:43.298Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66899fa568590beb1d53806a\",\n            \"products\": [],\n            \"address\": \"test address\",\n            \"status\": \"pending\",\n            \"total\": 200,\n            \"user\": \"66899f901a818662b7da0cc4\",\n            \"createdAt\": \"2024-07-06T19:48:53.195Z\",\n            \"updatedAt\": \"2024-07-06T19:48:53.195Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66899f69aa364b18c9b091ba\",\n            \"products\": [],\n            \"address\": \"test address\",\n            \"status\": \"pending\",\n            \"total\": 200,\n            \"user\": \"66899f684672b3bab2ea0f4b\",\n            \"createdAt\": \"2024-07-06T19:47:53.022Z\",\n            \"updatedAt\": \"2024-07-06T19:47:53.022Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66899f1eaa364b18c9b091b7\",\n            \"products\": [],\n            \"address\": \"test address\",\n            \"status\": \"pending\",\n            \"total\": 200,\n            \"user\": \"66899f1ecf80e4789593f72f\",\n            \"createdAt\": \"2024-07-06T19:46:38.551Z\",\n            \"updatedAt\": \"2024-07-06T19:46:38.551Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66899edbaa364b18c9b091b3\",\n            \"products\": [],\n            \"address\": \"test address\",\n            \"status\": \"pending\",\n            \"total\": 200,\n            \"user\": \"66899ebd2eed03fad9187cb7\",\n            \"createdAt\": \"2024-07-06T19:45:31.389Z\",\n            \"updatedAt\": \"2024-07-06T19:45:31.389Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66899edbaa364b18c9b091b1\",\n            \"products\": [],\n            \"address\": \"test address\",\n            \"status\": \"pending\",\n            \"total\": 200,\n            \"user\": \"66899ea683f5567331721d06\",\n            \"createdAt\": \"2024-07-06T19:45:31.385Z\",\n            \"updatedAt\": \"2024-07-06T19:45:31.385Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66899edbaa364b18c9b091af\",\n            \"products\": [],\n            \"address\": \"test address\",\n            \"status\": \"pending\",\n            \"total\": 200,\n            \"user\": \"66899e7f73f53dbda4402b35\",\n            \"createdAt\": \"2024-07-06T19:45:31.376Z\",\n            \"updatedAt\": \"2024-07-06T19:45:31.376Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"66899edbaa364b18c9b091ad\",\n            \"products\": [],\n            \"address\": \"test address\",\n            \"status\": \"pending\",\n            \"total\": 200,\n            \"user\": \"66899e7212bc0de4da663d28\",\n            \"createdAt\": \"2024-07-06T19:45:31.364Z\",\n            \"updatedAt\": \"2024-07-06T19:45:31.364Z\",\n            \"__v\": 0\n        }\n    ],\n    \"count\": 55\n}"
+						}
+					]
+				},
+				{
+					"name": "Order By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{gamemano_base_url}}/api/orders/:id",
+							"host": [
+								"{{gamemano_base_url}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6689b3fa78ba6571cbac60a6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Order By Id Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{gamemano_base_url}}/api/orders/:id",
+									"host": [
+										"{{gamemano_base_url}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "6689b3fa78ba6571cbac60a6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "382"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"17e-GP6b7xneCvWXSZ1LZXlzCyswzZc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 Jul 2024 04:16:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6689b3fa78ba6571cbac60a6\",\n    \"products\": [\n        {\n            \"_id\": \"6689b3be2c4ef2e732cf8261\",\n            \"name\": \"Product 4\",\n            \"price\": 4000\n        },\n        {\n            \"_id\": \"6689b3be2c4ef2e732cf825e\",\n            \"name\": \"Product 1\",\n            \"price\": 1000\n        }\n    ],\n    \"address\": \"AI 73 ,street no 25,newtown,700156\",\n    \"status\": \"cancelled\",\n    \"total\": 5000,\n    \"user\": \"6689b3be2c4ef2e732cf8264\",\n    \"createdAt\": \"2024-07-06T21:15:38.620Z\",\n    \"updatedAt\": \"2024-07-06T21:16:06.816Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGExZmFjNzYyZjBlYzlkMmUxZGY5MCIsImlhdCI6MTcyMDMyODEwOCwiZXhwIjoxNzIxMTkyMTA4fQ.F4pcak8Ce09sTQBvODknuDZAze2bO_h-uyTsYnZkt9k",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

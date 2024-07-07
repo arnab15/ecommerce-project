@@ -1,0 +1,6 @@
+[submodule "order-service"]
+	path = order-service
+	url = https://github.com/arnab15/order-service.git
+[submodule "main-service"]
+	path = main-service
+	url = https://github.com/arnab15/main-service.git
