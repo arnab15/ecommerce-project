@@ -6,7 +6,7 @@ Code based contains two Services main service and order service
 - Order Service: It's a Kafka consumer based service which built for processing orders
 
 ## Github Links
-- [Gamemano Assignment ](https://github.com/arnab15/gamemano-assignment)
+- [Ecommerce Assignment ](https://github.com/arnab15/ecommerce-projec)
 - [Main Service ](https://github.com/arnab15/main-service)
 - [Order Service ](https://github.com/arnab15/order-service)
 
